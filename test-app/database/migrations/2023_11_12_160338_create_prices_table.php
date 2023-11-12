@@ -12,7 +12,7 @@ class CreatePricesTable extends Migration
     {
         Schema::create('prices', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_id')->constrained();
+            $table->foreignId('product_id')->cascadeOnDelete();
             $table->string('currency_code');
             $table->decimal('price', 8, 2);
             $table->timestamps();

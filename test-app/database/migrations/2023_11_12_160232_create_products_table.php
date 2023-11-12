@@ -1,6 +1,6 @@
 <?php
 
-// database/migrations/2023_01_01_create_products_table.php
+// database/migrations/2023_11_12_160232_create_products_table.php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
