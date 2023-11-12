@@ -14,8 +14,8 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        Price::truncate();
-        Product::truncate();
+        Price::query()->delete();
+        Product::query()->delete();
 
         Factory::factoryForModel(Product::class)->count(1000)->create();
 
